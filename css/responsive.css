@@ -1,0 +1,108 @@
+
+
+/* MAKING BURGER */
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 2%;
+    top: 15px;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 5px;
+}
+
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width : 939px){
+
+    /* NAVBAR */
+    .navbar{
+        height: 460px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.7s ease-out;
+    }
+
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .rnav{
+        width: 25%;
+        text-align: center;
+    }
+
+
+    /* burger */
+    .burger{
+        display: block;
+    }
+
+    .nav-h-resp{
+        height: 60px;
+    }
+
+    .v-class-nav{
+        opacity: 0;
+    }
+    
+
+
+
+    /* SECTION HOME */
+    
+    .box-main{
+        flex-direction: column-reverse;
+        margin: 0px 12px;
+    }
+
+   .f-con{
+    align-items: center;
+    text-align: center;
+   }
+
+   .con{
+    width: 80%;
+    padding: 4px;
+   }
+
+
+
+   /* SECTION TWO  */
+   .STWO {
+    margin: 43px 0px;
+    }
+
+   .sectwo{
+       flex-direction: column;
+       height: 100%;
+       padding: 20px 50px;
+   }
+
+   .picture img {
+    width: 100%;
+    }
+
+
+
+    /* CONTACT */
+    .contact{
+        flex-direction: column-reverse;
+    }
+
+    .formpic{
+        display: none;
+    }
+    .formset{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,393 @@
+@import url('http://fonts.cdnfonts.com/css/dellima');
+@import url('http://fonts.cdnfonts.com/css/josefin-sans-std');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+/* BASICS */
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root{
+    --head-font : 'Josefin Sans Std', sans-serif;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 19px;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 7px;
+    width: 100%;
+    
+}
+/* .nav-list a:hover{
+    color: rgb(108, 105, 105);
+} */
+
+.rnav{
+    width: 30%;
+    text-align: right;
+}
+
+#search{
+    padding: 2px;
+}
+
+/* nav-list animation */
+
+.slide-ani{
+    position: absolute;
+    background: rgb(245, 200, 155);
+    height: 20px;
+    width: 29px;
+    top: 20px;
+    opacity: 0.3;
+    transition: all 0.25s ease-out;  
+}
+
+.slide-ani:hover {
+    opacity: 0.5;
+    transform: scaleX(2);
+    transform-origin: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECTION HOME */
+.home{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px;
+    height: 88%;
+}
+
+.con{
+    padding: 20px;
+    width: 50%;
+}
+
+.f-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    color: white;
+}
+.f-con h2{
+    font-family: 'Dellima', sans-serif;
+}
+
+
+.s-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-con img{
+    width: 65%;
+    border-radius: 150px;
+}
+
+
+/* animation */
+
+.box-main{
+    animation: slide 1s ease-in 0.1s 1 forwards;
+}
+
+@keyframes slide {
+    from{
+        transform: translateY(-130px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECTION 2 */
+.STWO{
+    margin: 100px 0px;
+}
+
+.sectwo{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 0px 101px;
+}
+.sec-rev{
+    flex-direction: row-reverse;
+}
+.picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.picture img{
+    width: 75%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* animation */
+
+.sectwo .picture{
+    animation: slideFleft 2s ease-in 1s 1 forwards;
+}
+@keyframes slideFleft {
+    from{
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.sec-rev .picture{
+    animation: slideRleft 2s ease-in 1s 1 forwards;
+}
+@keyframes slideRleft {
+    from{
+        transform: translateX(150px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* CONTACT FORM  */
+
+.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    background-color: rgba(223, 237, 250, 0.395);
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+.formset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.formset,.formpic{
+    width: 42%;
+    margin: 50px 0px;
+}
+.contact input,textarea{
+    margin: 10px;
+    width: 66%;
+    padding: 3px;
+}
+
+.formpic img{
+    width: 100%;
+}
+
+.form-btn{
+    padding: 3px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+}
+.form-btn:hover{
+   background-color: rgb(101, 99, 99);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* UTILITY CLASS*/
+.head{
+    font-size: 45px;
+    font-family: var(--head-font);
+}
+
+.form-head{
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px 43px;
+    font-family: var(--head-font);
+}
+   
+
+.para{
+    font-size: 14px;
+}
+
+.btn{
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm{
+    margin: 6px 0px;
+    padding: 2px 13px;
+    background-color: white;
+    border-radius: 5px;
+    background: none;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.4) url('../img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+
+
+
+
+
+
