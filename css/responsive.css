@@ -53,6 +53,10 @@
     .v-class-nav{
         opacity: 0;
     }
+
+    .slide-ani {
+        display: none;
+    }
     
 
 
